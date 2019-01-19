@@ -1,0 +1,131 @@
+<div class="social-links">
+    {% if site.facebook %}
+        <a class="link" data-title="facebook.com/{{ site.facebook }}" href="http://facebook.com/{{ site.facebook }}" target="_blank">
+            <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.twitter %}
+        <a class="link" data-title="twitter.com/{{ site.twitter }}" href="http://twitter.com/{{ site.twitter }}" target="_blank">
+            <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.inspire %}
+        <a class="link" data-title="inspirehep.net/author/profile/{{ site.inspire }}" href="http://inspirehep.net/author/profile/{{ site.inspire }}" target="_blank">
+            <svg class="icon icon-inspire">
+            <filter
+                   id="filter4528"
+                   style="color-interpolation-filters:sRGB;"><feColorMatrix
+                     result="fbSourceGraphic"
+                     id="feColorMatrix4526"
+                     values="0 0 0 -0.5 0.5 0 0 0 -0.5 0.5 0 0 0 -0.5 0.5 0 0 0 1 0" /><feColorMatrix
+                     id="feColorMatrix4530"
+                     values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+                     in="fbSourceGraphic"
+                     result="fbSourceGraphicAlpha" /><feColorMatrix
+                     in="fbSourceGraphic"
+                     values="0 0 0 -0.5 0.5 0 0 0 -0.5 0.5 0 0 0 -0.5 0.5 0 0 0 1 0"
+                     id="feColorMatrix4532" /></filter>
+            <image id="icon-inspire" width="17" height="17" x="0" y="0" style="fill:#000000;fill-opacity:0.98984772;stroke:#00000e;stroke-opacity:1;filter:url(#filter4528)"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACwVBMVEUAAAD/zJn/zJnGuaz3 yZz9y5r/zJm8tq/+zJn/zJlmmcygrLn9y5r/zJn/zJn/zJmSqL3/zJn/zJn/zJn/zJn/zJn/zJn/ zJn/zJn/zJn9y5r/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJmxsrPyyJ35 ypv/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/ zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJlmmcxm mcxmmcxmmcxmmcxmmcz/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJlmmcxmmcxmmcz/ zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJlmmcz/zJn/ zJn/zJn/zJn/zJn/zJn/zJn/zJlzncj/zJn/zJn/zJn/zJn/zJlmmcy+tq//zJn/zJn/zJn/zJnP vKn/zJmaqrtomsv/zJn/zJn/zJn/zJn/zJmkrrf/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/ zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJlomsv/zJlnmcz/zJn/zJn/zJn/zJn/zJn/zJn/zJn/ zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/ zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJlm mcz/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn/zJn8y5r9y5rzyJ3vx55m mczWvqf///8maD3uAAAA43RSTlMAu7ej/fFiqvdrIqX9AQwKLQs0QigUDlVySPnhHg1LyPzPR5bj 8JouavHLBD2o+fa2r9/vy4Uf6P64ZzAYVG8qf6EJonMaX9ZaBhy07fs4EURVd5lmLGX04KCSx/q6 ixIzu8xtl0EkjvOJSSu/549FERDAU90FM3zG/deTO0qAztOKPIif1I3Sgtl9Z0UHG2bNcTkXT6Pp sndRIzHd6tEIYcH45j6997zew8RK4ngdJ525g031tVxApkwDGTew2qRbFa7bL25q8U6V8hOB7Fap fqcizOXuNnBSqkMpejljWC10AnV4proAAAABYktHROrI2hYuAAAAB3RJTUUH4gkECRwoyTkrJwAA A0xJREFUWMNjYBhcgPExEDCRr5+ZBWQAKxu5+tmfPAYDDk7y9HM9fQwD5BnA/YxCAx4/HmgDeIgw gJePnxenpMBzHAYICgmLiIJZYuISkny4nSAF1S4tgyIsKycPFFRQVBKVVFZRVcNjgLqGJlCllpAI iqi2jq4eyFh9A0Ojx8YmpiQHjZmaOdhdFhaP9SytrG1INsDWWAHqNXM7e16StTMwOMCD1tGJDO0M DM5wA1zI0e7q5m4BM8CDZN2eXmzePo/1faEG+BHW4R8QGBQcAuU4hYZZhj+OiIyKjgHqNoqNi8ev OSEx6QUYBEH4IsmMMY8jUlLT1NMzgKkgMyueUBS8eIFkQLZdju/j3Lz8AgbtwtQoE/eiYhmCUVgC NSCAobSsvKLycVV1Tbw2KUGWCDWg1rqu3vdxQ2MTqWHeDDWgRVHvcWtbKumpJghqwEuL9o7UeJK1 MzCEQA3o7FIXI0M7A0MA1IBuQbK0IwzowS7d29c/AZokGyZmY/Ei7ySoATjMnzxl6jSIfotp02fM xFTgOQu/AbMb51RCDYiZO88QU4H2fPwGLFi4CFFsW2RgU4LfgMjFFo+RAB4DlmAHixWQ9ethM2Ap xAAF7OAxCliGzYDlEANWYAeoBsRgMyARbxjoo5pAugErVSk0wKEdGAuQiPA1nrOKdANWT12jBzag 0mee7tqZeAyQWNeLTXb9gg0Ny0D2q27ctFnGE48BW7Zu68MiG28vrjYHFP7zHLbjqCChBqx4bLxj p9MudFm+3Xvs9u5TMWrYf0CkUBufAfkbch9HKDcVMJAMYIF4sPjQMovDDkfINoCBQeYosFFSdIy0 Uh0lGndZdx1+fJzpxGRyDQCWYLNPLn58KiWVl/f0GVDdePYcYeegJSS+4vPhj1svhFpfBCe/GadJ NYCB4dKCHAW9y4ZXwAasciBowFVY3YgAs2bUW8AKoi0EDXiBaQBD7zVYUUpEAxibAchNaIoN4CPP gGXL4K20WWQZcH0eRDswKKbf4MPXTOFCbuIgQPH0RSA3rLh5cc3j3Mhbt3GnpwDsBoitvwNsLFed cy3N3w9stBncJdUAJLD73sItV+5TYABD74OHduqE4gIveKQtSF7rBQnsotQAagMAVMwEvUp6IWEA AAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDktMDRUMDk6Mjg6NDAtMDc6MDDKoo4WAAAAJXRFWHRk YXRlOm1vZGlmeQAyMDE4LTA5LTA0VDA5OjI4OjQwLTA3OjAwu/82qgAAAABJRU5ErkJggg==" />
+            </svg>
+        </a>
+    {% endif %}
+
+    {% if site.google %}
+        <a class="link" data-title="plus.google.com/+{{ site.google }}" href="http://plus.google.com/+{{ site.google }}" target="_blank">
+            <svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.instagram %}
+        <a class="link" data-title="instagram.com/{{ site.instagram }}" href="http://instagram.com/{{ site.instagram }}" target="_blank">
+            <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.pinterest %}
+        <a class="link" data-title="pinterest.com/{{ site.pinterest }}" href="http://pinterest.com/{{ site.pinterest }}" target="_blank">
+            <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.linkedin %}
+        <a class="link" data-title="linkedin.com/in/{{ site.linkedin }}" href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank">
+            <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.youtube %}
+        <a class="link" data-title="youtube.com/{{ site.youtube }}" href="http://youtube.com/{{ site.youtube }}" target="_blank">
+            <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.spotify %}
+        <a class="link" data-title="open.spotify.com/user/{{ site.spotify }}" href="https://open.spotify.com/user/{{ site.spotify }}" target="_blank">
+            <svg class="icon icon-spotify"><use xlink:href="#icon-spotify"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.lastfm %}
+        <a class="link" data-title="last.fm/user/{{ site.lastfm }}" href="https://last.fm/user/{{ site.lastfm }}" target="_blank">
+            <svg class="icon icon-lastfm"><use xlink:href="#icon-lastfm"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.github %}
+        <a class="link" data-title="github.com/{{ site.github }}" href="https://github.com/{{ site.github }}" target="_blank">
+            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.gitlab %}
+        <a class="link" data-title="gitlab.com/{{ site.gitlab }}" href="https://gitlab.com/{{ site.gitlab }}" target="_blank">
+            <svg class="icon icon-gitlab"><use xlink:href="#icon-gitlab"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.stackoverflow %}
+        <a class="link" data-title="stackoverflow.com/users/{{ site.stackoverflow }}" href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank">
+            <svg class="icon icon-stackoverflow"><use xlink:href="#icon-stackoverflow"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.quora %}
+        <a class="link" data-title="quora.com/profile/{{ site.quora }}" href="https://www.quora.com/profile/{{ site.quora }}" target="_blank">
+            <svg class="icon icon-quora"><use xlink:href="#icon-quora"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.reddit %}
+        <a class="link" data-title="reddit.com/user/{{ site.reddit }}" href="https://www.reddit.com/user/{{ site.reddit }}" target="_blank">
+            <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.medium %}
+        <a class="link" data-title="medium.com/@{{ site.medium }}" href="https://medium.com/@{{ site.medium }}" target="_blank">
+            <svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.vimeo %}
+        <a class="link" data-title="vimeo.com/{{ site.vimeo }}" href="https://vimeo.com/{{ site.vimeo }}" target="_blank">
+            <svg class="icon icon-vimeo"><use xlink:href="#icon-vimeo"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.lanyrd %}
+        <a class="link" data-title="lanyrd.com/{{ site.lanyrd }}" href="https://lanyrd.com/{{ site.lanyrd }}" target="_blank">
+            <svg class="icon icon-microphone"><use xlink:href="#icon-microphone"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.email %}
+        <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}">
+            <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
+        </a>
+    {% endif %}
+</div>
