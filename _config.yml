@@ -15,7 +15,7 @@ picture: assets/images/profile.jpg
 #resume-external: true
 #resume-url: https://www.maastrichtuniversity.nl/p.hernandezserrano
 
-url: http://pedrohserrano.github.io
+#url: http://pedrohserrano.github.io
 
 permalink: /:title/
 
